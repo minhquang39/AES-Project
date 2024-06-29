@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #808080;
+    --secondary-color: #a6a6a6;
+    --orange-color: #ff9933;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

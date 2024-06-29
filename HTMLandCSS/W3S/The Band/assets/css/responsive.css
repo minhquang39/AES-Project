@@ -1,0 +1,148 @@
+/* Pc */
+@media (min-width:1024px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* Tablet and mobile  */
+@media (max-width:1023px) {
+    .buy-ticket {
+        padding: 15px 16px;
+    }
+
+    .socials-list i {
+        font-size: 48px;
+        margin: 0 8px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    a[href*="about"] {
+        padding: 8px;
+        display: inline-block;
+    }
+
+    .contact-address {
+        list-style: 2;
+    }
+
+    .contact-address a {
+        opacity: 0.7;
+    }
+
+    .contact-address a:hover {
+        opacity: 1;
+    }
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px) {}
+
+/* Mobile */
+@media (max-width:740px) {
+
+    /* common  */
+    .s-col100 {
+        width: 100%;
+    }
+
+    .s-full-width {
+        width: 100%;
+    }
+
+    /* menu theo chiều dọc */
+    #nav>li {
+        display: block;
+    }
+
+    /* ẩn cái thừa của menu  */
+    #header {
+        overflow: hidden;
+    }
+
+    /*Icon Menu bar */
+    #header .header-search {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        float: right;
+        padding: 0 21px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #header .menu-icon {
+        font-size: 20px;
+        line-height: 46px;
+        color: #fff;
+    }
+
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    /* Fix nav  */
+
+    #nav {
+        display: block;
+    }
+
+    #nav ul {
+        display: block;
+    }
+
+    /* Thẻ li đầu tiên của cha nav  */
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        display: none;
+    }
+
+    #nav .subnav a {
+        padding: 7px 40px;
+    }
+
+    /* css member band  */
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .member-item p {
+        color: #000;
+    }
+
+    #content .member-item img {
+        width: 60%;
+    }
+
+    /* Done member band  */
+
+
+    /* css place  */
+    #content .place {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    /* done css place */
+
+    /* css contact form  */
+    .contact-content {
+        margin-top: 32px;
+    }
+
+    .contact-address {
+        margin-bottom: 16px;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: yellow;
+    height: 200px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0 -12px; */
+    margin: 0 -12px;
+}
+
+.col {
+    padding: 0 12px;
+    /* margin: 0 12px; */
+}
+
+.column-2 {
+    width: 20%;
+    background-color: red;
+    height: 200px;
+}
+
+.column-10 {
+    width: 80%;
+    background-color: aqua;
+    height: 200px;
+}

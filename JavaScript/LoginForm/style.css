@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ccc;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 390px;
+    background-color: #fff;
+    padding: 32px 24px;
+}
+
+.heading {
+    font-weight: bolder;
+    font-size: 37px;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+input {
+    padding: 16px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.forgot_password {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.signin_button {
+    padding: 16px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.line {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+p:before {
+    content: "___________________";
+    color: black;
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+
+p:after {
+    content: "___________________";
+    color: black;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+}
+
+.social_link {
+    padding-top: 20px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin-top: 16px;
+}
+
+.register,
+.sign_in {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.wrapper.hidden {
+    display: none;
+}

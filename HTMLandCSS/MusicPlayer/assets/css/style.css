@@ -1,0 +1,406 @@
+.main {
+    background-color: #e0e0eb;
+}
+
+aside {
+    background-color: #eeecec;
+}
+
+.content {
+    background-color: rgb(230, 237, 237);
+}
+
+.menu,
+.playlist {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+}
+
+.sidebar-menu {
+    margin-top: 20px;
+}
+
+.sidebar-item,
+.sidebar-sub-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.sidebar-item:hover,
+.sidebar-sub-item:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--orange-color);
+}
+
+.sidebar-item:hover .sidebar-link,
+.sidebar-sub-item:hover .sidebar-sub-link {
+    color: var(--orange-color);
+}
+
+.sidebar-link,
+.sidebar-sub-link {
+    /* color: var(--primary-color); */
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+
+/* Done sidebar  */
+
+/* Header  */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.account-image {
+    background-image: url(../image/icons8-shiba-64.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.header-button {
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.account {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.account-name {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+.form-header {
+    display: inline-block;
+    height: 40px;
+    width: 500px;
+    border-radius: 20px;
+    border: none;
+    line-height: 40px;
+    background-color: white;
+    position: relative;
+}
+
+.search-button {
+    border: none;
+    outline: none;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+}
+
+.search-icon {
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    font-weight: 200px;
+}
+
+.search-input {
+    display: inline-block;
+    height: 40px;
+    width: 400px;
+    border: none;
+    line-height: 40px;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 40px;
+}
+
+/* End header  */
+
+/* Nav  */
+nav {
+    margin-top: 50px;
+}
+
+.for-you {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.nav-list {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-item {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+}
+
+.nav-item:nth-child(1) {
+    color: var(--orange-color);
+}
+
+/* End Nav */
+
+/* Playlist  */
+.playlist-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-item {
+    position: relative;
+}
+
+.playlist-image img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.playlist-name {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.playlist-artist {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+.playlist-number {
+    display: inline-block;
+    padding: 4px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+
+.playlist-heart {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.playlist-item:first-child .playlist-heart .heart-icon {
+    color: red;
+}
+
+/* End playlist  */
+
+/* section */
+section {
+    margin-top: 50px;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.section-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-desc {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.section-right {}
+
+.section-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.section-item {}
+
+.section-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.section-name-art {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.section-body {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+.section-body-img {
+    width: 100px;
+    height: 100px;
+}
+
+.section-body-img img {
+    border-radius: 10px 0 0 10px;
+}
+
+.section-des {
+    display: flex;
+    gap: 130px;
+    margin: 10px 10px 5px 10px;
+}
+
+.section-name-music {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.section-art {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+.section-play {
+    position: absolute;
+    right: 10%;
+    color: orange;
+}
+
+.section-body-right {
+    /* position: relative; */
+}
+
+.section-body-bot {
+    position: relative;
+    top: 38px;
+    left: 0px;
+}
+
+.section-quantity {
+    width: calc(100% + 7px);
+    height: 5px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 0px 0px 10px 0;
+}
+
+.section-remain {
+    width: 60%;
+    height: 5px;
+    background-color: orange;
+}
+
+/* end section */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.footer-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-music {
+    display: flex;
+}
+
+.footer-about {
+    margin: 10px 0 0 10px;
+}
+
+.footer-name {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.footer-desc {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+.footer-control {
+    display: flex;
+    gap: 16px;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.footer-status {
+    margin-right: 100px;
+    display: flex;
+    gap: 16px;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-time {
+    width: 100px;
+}
+
+.footer-quantity {
+    width: calc(100% + 10px);
+    height: 5px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 0px 0px 10px 0;
+}
+
+.footer-remain {
+    width: 60%;
+    height: 5px;
+    background-color: orange;
+}
+
+/* end footer  */

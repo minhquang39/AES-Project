@@ -1,0 +1,106 @@
+:root {
+    --primary: #021A84;
+    --secondary: #FE4C4C;
+    --text: #171717;
+    --gray: #999999;
+    --dark-primary: #010d42;
+    --background: #F2F2F2;
+    --light-gray: #E5E5E5;
+    --green-text: #2ADA66;
+    --blue-text: #021A84;
+    --red-text: #E5532A;
+    --green-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        #2ADA66;
+    --purple-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        #021A84;
+    --red-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        #E5532A;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: var(--background);
+}
+
+.wrapper {
+    max-width: 1160px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.btn {
+    height: 44px;
+    min-width: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.btn--border {
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    color: var(--primary);
+    transition: linear .2s;
+}
+
+.btn--border:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn--solid {
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+
+.btn--solid:hover::before {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn--solid::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    opacity: 0.1;
+    z-index: -1;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.heading {
+    color: var(--dark-primary);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.btn-scrollTop {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    z-index: 99;
+    bottom: 40px;
+}

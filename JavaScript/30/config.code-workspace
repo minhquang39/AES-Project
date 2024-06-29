@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../json_sever"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "30"
+  }
+}

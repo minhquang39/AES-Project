@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Bài 1: Viết chương trình đảo ngược chuỗi
+        <br>
+        function myFunction(s) { <br>
+        let a = ""; <br>
+        for (let i = s.length - 1; i >= 0; i--) { <br>
+        a += s[i]; <br>
+        } <br>
+        console.log("Chuoi dao nguoc cua " + s + " la " + a); <br>
+        } <br>
+
+        myFunction("cocainit");
+    </p>
+
+    <p>Bài 2: Viết chương trình kiểm tra chuỗi đó có phải là một chuỗi đối xứng hay không
+        <br>
+        function myFunction(s) { <br>
+        for (let i = 0; i < s.length / 2; i++) { <br>
+            if (s[i] !==s[s.length - 1 - i]) { return false; } } return true; } <br>
+            console.log(myFunction(""));
+    </p>
+    <p>
+        Bài 3: Viết chương trình đếm số lượng từ trong chuỗi
+        <br>
+        function myFunction(s) {
+        let a = s.split(" ");
+        console.log(a);
+        console.log(a.length);
+        }
+
+        myFunction("cocainit ne a ha ha");
+    </p>
+    <script src="/script.js"></script>
+</body>
+
+</html>

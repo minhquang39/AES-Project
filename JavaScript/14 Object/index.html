@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            /* Đặt chiều cao của HTML và thẻ body là 100% */
+        }
+
+        body {
+            display: flex;
+            /* Thiết lập kiểu hiển thị của body là flex */
+            justify-content: center;
+            /* Căn giữa các phần tử theo chiều ngang */
+            align-items: center;
+            /* Căn giữa các phần tử theo chiều dọc */
+        }
+
+        .constructor {
+            background-color: aqua;
+            display: inline-block;
+            text-align: justify;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class=constructor style="display:none">
+        function Person(name, age, address) { <br>
+        this.name = name; <br>
+        this.age = age;<br>
+        this.address = address;<br>
+
+        this.getInfo = function () {<br>
+        return `${this.name}${this.age}`;<br>
+        };<br>
+        }<br>
+
+        Person.prototype.class = "F8";<br>
+        Person.prototype.getClass = function () {<br>
+        return this.class;<br>
+        };<br>
+
+        var user = new Person("Minh Quang", 21, "Nghe An");<br>
+        var user2 = new Person("Huy Quan", 21, "Ha Noi");<br>
+
+        console.log(Person);<br>
+        console.log(user);<br>
+        console.log(user2);<br>
+        console.log(user2.getClass());<br>
+        <strong>In JavaScript, objects are king. If you understand objects,you understand Javascript</strong>
+    </p>
+    <div id="demo"></div>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@kawashi290110" data-unique-id="kawashi290110"
+        data-embed-type="creator" style="max-width: 780px; min-width: 288px;">
+        <section> <a target="_blank" href="https://www.tiktok.com/@kawashi290110?refer=creator_embed">@kawashi290110</a>
+        </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+body {
+    color: #333;
+    text-align: center;
+    background-color: #222;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px 0;
+}
+
+/* .wrapper:before,
+.wrapper:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 100%;
+}
+
+.wrapper:before {
+    left: 0;
+    background: linear-gradient(90deg, #222, transparent);
+}
+
+.wrapper:after {
+    right: 0;
+    background: linear-gradient(-90deg, #222, transparent);
+} */
+
+.items {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    font-size: 0;
+    cursor: pointer;
+    display: flex;
+}
+
+.items.active {
+    cursor: grab;
+}
+
+.items.smooth {
+    scroll-behavior: smooth;
+    cursor: grab;
+}
+
+.item {
+    display: inline-block;
+    margin-left: 20px;
+    user-select: none;
+    background: tomato;
+    width: 50%;
+    height: 130px;
+    color: #222;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 130px;
+    flex: 1 0 20%;
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.item:last-child {
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .item {
+        flex: 1 0 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .item {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .item {
+        flex: 1 0 20%;
+    }
+}
+
+.wrapper i {
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.fa-arrow-left {
+    left: -15px;
+}
+
+.fa-arrow-right {
+    right: -40px;
+}
+
+.items-dots {
+    display: flex;
+    position: absolute;
+    top: 330px;
+    right: 40%;
+    transform: translateY(-50%);
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.dot:hover {
+    background-color: white;
+}

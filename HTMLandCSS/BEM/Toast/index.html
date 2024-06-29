@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8c3d59399d.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8c3d59399d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="toast">
+        <!-- Succcess -->
+        <div class="toast toast--success">
+            <div class="toast__icon">
+                <i class="fa-regular fa-circle-check"></i>
+            </div>
+
+            <div class="toast__body">
+                <div class="toast__title">Success</div>
+                <p class="toast__msg">
+                    Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)
+                </p>
+            </div>
+
+            <div class="toast__close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="btn btn--success">Show success</div>
+        <div class="btn btn--danger">Show danger</div>
+    </div>
+
+    <script>
+        // Toast function
+        function toast({ title = '', message = '', type = 'info', duration = 3000 }) {
+            const main = document.getElementById('toast');
+            if (main) {
+                const toast = document.createElement('div')
+
+                toast.classList.add('toast');
+                toast.innerHTML = '        <div class="toast toast--success">
+                    < div class="toast__icon" >
+                        <i class="fa-regular fa-circle-check"></i>
+            </ >
+
+            <div class="toast__body">
+                <div class="toast__title">Success</div>
+                <p class="toast__msg">
+                    Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)
+                </p>
+            </div>
+
+            <div class="toast__close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+        </div > ';
+            }
+        }
+
+        toast({
+            title: 'Success',
+            message: 'Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)',
+            duration: 3000
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper hidden">
+            <form action="" id="signin" class="form">
+                <h1 class="heading">Lets Sign you in</h1>
+                <h3 class="desc">Welcome Back ,
+                    You have been missed</h3>
+
+                <div class="form-group">
+                    <input class="form-control" type="text" name="" id="email_signin"
+                        placeholder="Email, phone & username">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="" id="password_signin" placeholder="Password">
+                    <span class="form-message"></span>
+                </div>
+
+                <a href="" class="forgot_password">Forgot Password?</a>
+
+                <button class="signin_button">Sign in</button>
+
+                <p class="line">or</p>
+
+                <div class="social_link">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_702)">
+                            <path
+                                d="M22.9879 11.7152C22.9879 10.7729 22.9096 10.0852 22.7403 9.37215H11.7291V13.6252H18.1924C18.0621 14.6822 17.3585 16.2739 15.7947 17.3435L15.7728 17.4859L19.2543 20.1215L19.4955 20.145C21.7108 18.1458 22.9879 15.2042 22.9879 11.7152Z"
+                                fill="#4285F4" />
+                            <path
+                                d="M11.7291 22.921C14.8956 22.921 17.5539 21.9022 19.4955 20.145L15.7947 17.3435C14.8044 18.0184 13.4752 18.4895 11.7291 18.4895C8.62772 18.4895 5.99548 16.4904 5.05716 13.7271L4.91962 13.7385L1.29947 16.4763L1.25213 16.6049C3.1807 20.3487 7.14213 22.921 11.7291 22.921Z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.05716 13.7271C4.80957 13.0141 4.66629 12.25 4.66629 11.4605C4.66629 10.6709 4.80957 9.90695 5.04413 9.19386L5.03757 9.04199L1.37206 6.26022L1.25213 6.31596C0.457272 7.86951 0.00118256 9.61409 0.00118256 11.4605C0.00118256 13.3069 0.457272 15.0514 1.25213 16.6049L5.05716 13.7271Z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M11.7291 4.43136C13.9313 4.43136 15.4168 5.36093 16.2638 6.13775L19.5737 2.97973C17.5409 1.13332 14.8956 0 11.7291 0C7.14213 0 3.1807 2.57222 1.25213 6.31596L5.04413 9.19385C5.99548 6.4306 8.62772 4.43136 11.7291 4.43136Z"
+                                fill="#EB4335" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_0_702">
+                                <rect width="23" height="23" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.6835 25.9939V14.1368H16.9904L17.7849 9.51585H11.6835V6.56554C11.6835 5.2277 12.1789 4.31589 14.7372 4.31589L18 4.31476V0.181884C17.4355 0.125775 15.4988 0 13.2456 0C8.54132 0 5.32069 2.15337 5.32069 6.10813V9.51598H0V14.1369H5.32052V25.994L11.6835 25.9939Z"
+                            fill="#3C5A9A" />
+                    </svg>
+                    <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.2682 9.63231C22.1043 9.75946 19.2109 11.3898 19.2109 15.015C19.2109 19.2081 22.8926 20.6915 23.0028 20.7283C22.9859 20.8187 22.4179 22.7598 21.0617 24.7377C19.8523 26.4783 18.5893 28.216 16.6679 28.216C14.7466 28.216 14.2521 27.0999 12.034 27.0999C9.87248 27.0999 9.10393 28.2527 7.34644 28.2527C5.58894 28.2527 4.36265 26.6421 2.9527 24.6643C1.31953 22.3416 0 18.7334 0 15.3088C0 9.81597 3.5715 6.90283 7.08649 6.90283C8.95418 6.90283 10.5111 8.12912 11.6837 8.12912C12.7998 8.12912 14.5403 6.82936 16.6651 6.82936C17.4704 6.82936 20.3638 6.90283 22.2682 9.63231ZM15.6564 4.50393C16.5351 3.4613 17.1568 2.01462 17.1568 0.567936C17.1568 0.367322 17.1398 0.163882 17.1031 0C15.6733 0.0536855 13.9724 0.952211 12.9467 2.14177C12.1414 3.05725 11.3898 4.50393 11.3898 5.97039C11.3898 6.19079 11.4265 6.41118 11.4435 6.48182C11.5339 6.49877 11.6808 6.51855 11.8278 6.51855C13.1106 6.51855 14.724 5.65958 15.6564 4.50393Z"
+                            fill="black" />
+                    </svg>
+                </div>
+
+                <span class="footer">Don't have an account? <a href="" class="register">Register Now</a></span>
+            </form>
+        </div>
+
+        <div class="wrapper ">
+            <form action="" id="signup" class="form">
+                <h1 class="heading">Lets Register
+                    Account</h1>
+                <h3 class="desc">Hello user , you have
+                    a greatful journey</h3>
+
+                <div class="form-group">
+                    <input class="form-control" type="text" name="" id="name" placeholder="Username">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="" id="email" placeholder="Email">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="" id="password" placeholder="Password">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" name="" id="password_confirmation"
+                        placeholder="Password Confirmation">
+                    <span class="form-message"></span>
+                </div>
+
+
+                <button class="signin_button">Sign up</button>
+
+
+
+                <span class="footer">Already have an account? <a href="" class="sign_in">Sign in</a></span>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>

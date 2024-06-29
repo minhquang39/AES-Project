@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#hello {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#hello li {
+    flex: 1 0 50%;
+    margin-bottom: 20px;
+}
+
+#hello li:nth-of-type(2n) {
+    background-color: red ;
+}
+#hello li:nth-of-type(2n+1) {
+    background-color: blue ;
+}
